@@ -1,0 +1,51 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usetikzlibrary{shapes.geometric, arrows.meta, calc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\definecolor{darkblue}{RGB}{25, 50,120}
+\definecolor{codegreen}{RGB}{0,120,0}
+\definecolor{backcolor}{RGB}{245,245,245}
+\lstdefinestyle{mystyle}{
+backgroundcolor = \color{backcolor},
+comment style = \color{codegreen},
+keywordstyle=\color{darkblue}\bfseries,
+numberstyle=\tiny\color{gray},
+stringstyle=\color{purple},
+basicstyle=\ttfamily\small,
+breaklines=true,
+captionpos=b,
+keepspaces=true,
+numbers=lef,
+numbersep=5pt,
+}
+\lstset{style=mystyle}
+\title{\color{darkblue}\Huge\bfseries Mathematics Modelisation \& advance Computerscience}
+\author{\Large Nzeutong Charles}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+    This document is use as an exercice to master LaTex. It combines precise complex matrices equations , integration colored algorithm structures and creation of vectorial native with the environment TIkZ
+\end{abstract}
+\section{Linear Algebra and Dynamic Systems}
+In numerical analysis, we are often call to manipulate matrices transformation. Considering the matrice transition $M$ and the calculation of it's aigen values through the polynomial caracteristique:
+\begin{equation}
+    \det(M-\lambda I) = \mathcal{A}\cdot
+    \begin{Vmatrix}
+    a_{11}-\lambda & a_{12} & \dots & a_{1n}\\
+    a_{12} & a_{22} - \lambda  & \dots & a_{2n}\\
+    \vdots & \vdots & \ddots & \vdots\\
+    a_{n1} & a_{n2} & \dots & a_{nn} - \lambda
+    \end{Vmatrix}=0
+\end{equation}
+we can equally align multiple steps of calculation in a perfect symetrical manner with the help of the environment \texttt{align}
+\begin{align}
+f(x, y)&= \sum_{i=1}^{n} \left(\int_{0}^{\infty} e^{-tx} \cos(ty) \, dt \right) \nonumber\\
+\end{align}
+\end{document}
